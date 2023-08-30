@@ -1,274 +1,37 @@
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restraunt</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Weather Forecast app</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="navbar-container container">
-            <input type="checkbox" name="" id="">
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div>
-            <ul class="menu-items">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#food">Category</a></li>
-                <li><a href="#food-menu">Menu</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <h1 class="logo">C D N</h1>
-        </div>
-    </nav>
-    <section class="showcase-area" id="showcase">
-        <div class="showcase-container">
-            <h1 class="main-title" id="home">Cafe de Nepal</h1>
-            <p>Eat Nepali, Feel Nepali</p>
-            <a href="#food-menu" class="btn btn-primary">Menu</a>
-        </div>
-    </section>
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        <input type="text" id="city" placeholder="Enter city name">
+        <button id="search-button">Search</button>
+        <h2>Past Seven Days Weather Data</h2>
+        <button id="past-search-button">Show Past Week Data</button>
+        <div id="past-weather-data"></div>
+        <div id="weather"></div>
+    </div>
 
-    <section id="about">
-        <div class="about-wrapper container">
-            <div class="about-text">
-                <p class="small">About Us</p>
-                <h2>We've been serving best Nepali food in town.</h2>
-                <p>
-                    "You want best Nepali food we are there for you"We have been the number one choise for Nepali food in town because we 
-                    serving Nepali cuisine as it was made in your own Nepali home.Since our in 2001 establishment we have been serving 
-                    quality Nepali food for our customer.We are also serving Indian and Chiness cusine too since 2018.
-                </p>
-            </div>
-            <div class="about-img">
-                <img src="https://rachelgouk.com/wp-content/uploads/2020/05/nepali-kitchen-nepalese-restaurant-shanghai-1.jpg" alt="food" />
-            </div>
-        </div>
-    </section>
-    <section id="food">
-        <h2>Types of Cuisine</h2>
-        <div class="food-container container">
-            <div class="food-type Nepali">
-                <div class="img-container">
-                    <img src="https://www.altitudehimalaya.com/media/files/Blog/Food/Most-Popular-Nepalese-Foods.jpeg" alt="error" />
-                    <div class="img-content">
-                        <h3>Nepali</h3>
-                        <a href="https://www.trektoteach.org/blog/nepali-food-explained" class="btn btn-primary" target="blank">learn
-                            more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="food-type Indian">
-                <div class="img-container">
-                    <img src="https://www.amchur.co.uk/wp-content/uploads/2022/04/Indian-Cuisine.jpg" alt="error" />
-                    <div class="img-content">
-                        <h3>Indian</h3>
-                        <a href="https://en.wikipedia.org/wiki/Indian_cuisine" class="btn btn-primary" target="blank">learn
-                            more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="food-type Chiness">
-                <div class="img-container">
-                    <img src="https://cdn-almjc.nitrocdn.com/aZYyrACOqPKwqacflNAAVPArFRYGkpZe/assets/static/optimized/rev-76f8472/wp-content/uploads/2020/02/46d82e1a0b0100936591de3958f3408d.Chinese-food.jpg" alt="error" />
-                    <div class="img-content">
-                        <h3>Chinese</h3>
-                        <a href="https://en.wikipedia.org/wiki/Grain" class="btn btn-primary" target="blank">learn
-                            more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="food-menu">
-        <h2 class="food-menu-heading">Food Menu</h2>
-        <div class="food-menu-container container">
-            <div class="food-menu-item">
-                <div class="food-img">
-                    <img src="https://www.beyultreks.com/wp-content/uploads/2017/06/dal-bhat-Nepalese-food.jpg" alt="" />
-                </div>
-                <div class="food-description">
-                    <h2 class="food-titile">Dal Bhat Tarkari</h2>
-                    <p>
-                      Dal Bhat Tarkari is a popular dish in Nepal. It consists of rice (Bhat), lentils (Dal), and a variety of vegetables (Tarkari).
-                      It is a staple dish in Nepalese cuisine and is eaten at least twice daily in almost every Nepali household
-                    </p>
-                    <p class="food-price">Price Veg: &#8360; 600</p>
-                    <p class="food-price">Price Chicken: &#8360; 800</p>
-                    <p class="food-price">Price Mutton: &#8360; 1000</p>
-                </div>
-            </div>
-            <div class="food-menu-item">
-                <div class="food-img">
-                    <img src="https://haydenrue.com/wp-content/uploads/2022/09/Dhido-Thakali-Set-Traditional-Food.jpeg" alt="error" />
-                </div>
-                <div class="food-description">
-                    <h2 class="food-titile">Dhido</h2>
-                    <p>
-                      Dhido (ढिँडो) is a traditional Nepalese porridge prepared by cooking ground millet or cornmeal flour.
-                      It is traditionally cooked in a taapke (cast-iron pan) and is mostly consumed in the mountainous regions 
-                      where wheat and rice are difficult to grow. The porridge is often paired with pickles, yogurt, curried 
-                      vegetables, or homemade butter. It is recommended to consume it as soon as possible since it hardens as it cools.
-                    </p>
-                    <p class="food-price">Price: &#8360; 850</p>
-                </div>
-            </div>
-            <div class="food-menu-item">
-                <div class="food-img">
-                    <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Chicken-Biryani-Recipe.jpg" alt="" />
-                </div>
-                <div class="food-description">
-                    <h2 class="food-titile">Biryani</h2>
-                    <p>
-                        Biryani is a mixed rice dish originating in South Asia. It is made with Indian spices, vegetables, rice, and usually some type of meat, or in some cases without any meat, using Paneer or simply vegetables. 
-                    </p>
-                    <p class="food-price">Price Veg: &#8360; 600</p>
-                    <p class="food-price">Price Chicken: &#8360; 950</p>
-                    <p class="food-price">Price Mutton: &#8360; 1500</p>
-                </div>
-            </div>
-            <div class="food-menu-item">
-                <div class="food-img">
-                    <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2022/12/Tandoori-Chicken-Recipe.jpg" alt="" />
-                </div>
-                <div class="food-description">
-                    <h2 class="food-titile">Tandoori Chicken</h2>
-                    <p>
-                      Tandoori chicken’s juicy consistency and mouthwatering 
-                      spices make it a classic that never really goes out of style and always 
-                      manages to make new fans with each serving.The chicken is marinated in ingredients such as yogurt, ginger, garlic,
-                      and herbs, and then baked in a clay oven, creating a juicy and delicious flavor.
-                    </p>
-                    <p class="food-price">Price: &#8360; 1200</p>
-                </div>
-            </div>
-            <div class="food-menu-item">
-                <div class="food-img">
-                    <img src="https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Kung-Pao-Chicken.jpg" alt="" />
-                </div>
-                <div class="food-description">
-                    <h2 class="food-titile">Kung Pao Chicken</h2>
-                    <p>
-                      What better way to start this list of popular Chinese foods than with one of China’s most renowned and 
-                      famous dishes: kung pao chicken. This classic dish originated from Sichuan cuisine (south-western China) 
-                      and is a meal that is often first associated with typical Chinese food and cuisine.
-                    </p>
-                    <p class="food-price">Price: &#8360; 900</p>
-                </div>
-            </div>
-            <div class="food-menu-item">
-                <div class="food-img">
-                    <img src="https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Peking-Roast-Duck-1.jpg" alt="" />
-                </div>
-                <div class="food-description">
-                    <h2 class="food-titile">Peking Roast Duck</h2>
-                    <p>
-                      Created for the Ming Dynasty, Peking roast duck has since become a common delicacy enjoyed in Beijing, China.
-                      Seasoned before being oven-roasted, Peking duck is often served right out of the oven with its signature crisp and golden-brazed skin still intact. 
-                    </p>
-                    <p class="food-price">Price: &#8360; 1300</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="testimonials">
-        <h2 class="testimonial-title">What Our Customers Say</h2>
-        <div class="testimonial-container container">
-            <div class="testimonial-box">
-                <div class="customer-detail">
-                    <div class="customer-photo">
-                        <img src="https://english.pardafas.com/wp-content/uploads/2022/12/Prachanda-5.jpg" alt="" />
-                        <p class="customer-name">PM Pushpa Kamal Dahal</p>
-                    </div>
-                </div>
-                <div class="star-rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </div>
-                <p class="testimonial-text">
-                    Wonderfull place to eat food.Best nepali restraunt in Nepal with very tasty food and hospitable staff. 
-                </p>
+    <script src="weather.js"></script>
 
-            </div>
-            <div class="testimonial-box">
-                <div class="customer-detail">
-                    <div class="customer-photo">
-                        <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQBTWYt_OywJ_ZWteq6mAagQmGVuxj0gRGiWMpB9rChLfS-aAjuXthsfJuQ4JFgO2CEMoH6n_0vdxKrUrU" alt="" />
-                        <p class="customer-name">President Barack Obama</p>
-                    </div>
-                </div>
-                <div class="star-rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </div>
-                <p class="testimonial-text">
-                    Best food that I have eaten. Wonderfull service, friendly staff and very fast service.
-                </p>
-
-            </div>
-            <div class="testimonial-box">
-                <div class="customer-detail">
-                    <div class="customer-photo">
-                        <img src="https://thehimalayantimes.com/thehimalayantimes/uploads/images/2023/01/28/thumbs/400x400/21134.jpg" alt="" />
-                        <p class="customer-name">MP Ravi Lamichhane</p>
-                    </div>
-                </div>
-                <div class="star-rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </div>
-                <p class="testimonial-text">
-                    Nepal number one restraunt. Very clean and quick service. Excellent food and staff.
-                </p>
-
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="contact-container container">
-            <div class="contact-img">
-                <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="" />
-            </div>
-
-            <div class="form-container">
-                <h2>Contact Us</h2>
-                <input type="text" placeholder="Your Name" />
-                <input type="email" placeholder="E-Mail" />
-                <textarea cols="30" rows="6" placeholder="Type Your Message"></textarea>
-                <a href="#" class="btn btn-primary">Submit</a>
-                <h3>Contact Information</h3>
-            <p>Phone: 01-000320</p>
-            <p>Address: Pulltole Nagarjun 7, kathmandu , Nepal</p>
-            </div>
-        </div>
-    </section>
-    <footer id="footer">
-        <h2>Cafe de Nepal &copy; all rights reserved</h2>
-    </footer>
+    <style>
+        .past-weather {
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            margin-top: 20px;
+        }
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="app.js"></script>
-
-</html>
-
+        .weather-entry {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+    
 </body>
-
 </html>
